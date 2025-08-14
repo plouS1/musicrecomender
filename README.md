@@ -15,6 +15,7 @@ python3 musicrecplus.py
 
 
 Menu:
+
 e - Enter preferences  
 r - Get recommendations  
 p - Show most popular artists  
