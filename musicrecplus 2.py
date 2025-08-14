@@ -1,18 +1,17 @@
-#Names: Anthony Eryan, Lakysha Motiani, Sotiris Ploumbis
-#pledge: We pledge our honor we have abided by the stevens honor system
+
 import os
 
 file = './musicrecplus.txt'
 
 def CheckIfFileExists(file):
-    '''checks if a file exists, if it doesnt it creates it-sotiris'''
+    '''checks if a file exists, if it doesnt it creates it'''
     if os.path.isfile(file):
         DatabaseLoad(file)
     else:
         open(file,"w")
 
 def DatabaseLoad(file):
-    '''puts the contents of a file into a dictionary so further functiosn iterate through it-sotiris'''
+    '''puts the contents of a file into a dictionary so further functiosn iterate through it'''
     database = {}
     with open(file, "r") as file:
         for line in file:
@@ -34,7 +33,7 @@ def check(database, userInput):
     return T
 
 def enter_preferences(userName, database, file):
-    '''enteres the preferences of a user, works for new useraswell-sotiris'''
+    '''enteres the preferences of a user, works for new useraswell'''
     listofprefernce = []
     while True:
         print("Enter an artist that you like (Press Enter to finish): ")
@@ -75,7 +74,7 @@ def enter_preferences(userName, database, file):
 
 
 def Menu(inputOfUser,userInput, database,file):
-    '''pops up the menu for the user to choose what actions he wants- sotiris'''
+    '''pops up the menu for the user to choose what actions he wants'''
     if inputOfUser == 'e':
         enter_preferences(userInput, database,file)
     elif inputOfUser == 'r':
@@ -126,7 +125,6 @@ def Main():
 
 def top_3_popular_artists(file):
     '''Print the artists that are liked by the most users.
-    by Anthony Eryan
     '''
     artist_counts = {}  # key: artist value: likes
 
@@ -156,8 +154,7 @@ def top_3_popular_artists(file):
 
 
 def count_artist_likes(file):  # 4
-    '''Print the number of likes the most popular artist received.
-    by Anthony Eryan'''
+    '''Print the number of likes the most popular artist received.'''
     artist_counts = {}  # key: artist value: likes
     with open(file, 'r') as f:
         for line in f:
@@ -198,14 +195,11 @@ def find_user_likes_mostartists(database, current_user): #5
         print(user)
 
 
-''' 
-lakshya motiani
-'''
+
 
 def save_and_quit(file): #6
   '''When the user chooses to quit, the current database should be written
-to the musicrecplus.txt, replacing old contents (if any).
-by Anthony Eryan'''
+to the musicrecplus.txt, replacing old contents (if any). '''
   CheckIfFileExists(file)
   with open(file, 'w') as f:
       f.write('')
@@ -270,8 +264,6 @@ def generate_recommendations(user, similar_user, database):
 
   return sorted(recommendations)
 
-'''
-Lakshya Motiani
-'''
 
 Main()
+
