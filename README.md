@@ -23,6 +23,7 @@ h - How popular is the most popular
 m - Which user has the most likes  
 q - Save and quit  
 
-Notes: Originally developed as the final project for my CS 115 course.
-Rebuilt and refined to demonstrate programming fundamentals in Python,
-including file handling, dictionaries, and recommendation algorithms.
+Notes: 
+Originally developed as the final project for my CS 115 course.
+The core functionality — including file handling, user data management, and recommendation logic — was implemented by Sotiris Ploumbis.
+Some peripheral features were contributed by teammates and are preserved as originally submitted; these may require refinement in future updates.
