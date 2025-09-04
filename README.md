@@ -31,7 +31,7 @@ q - Save and quit
    ```bash
    git clone https://github.com/YOURUSERNAME/MusicRecommender.git
    cd MusicRecommender
-2.
+2.Run:
 ```bash
    python3 "musicrecplus 2.py"
 
